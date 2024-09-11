@@ -12,18 +12,32 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        "primary":{
-          "black": "#000000",
-          "green": "#1dba1c",
-          "white": "#ffffff",
-        }
+        primary: {
+          black: "#000000",
+          green: "#1dba1c",
+          white: "#ffffff",
+          darkblue: "0A0F22",
+          lightblue: "56B2BB",
+          grey: "BAC7CC",
+        },
+        secondary: {
+          darkblue: "1d2233",
+          grey: "f0f4f8",
+        },
       },
       backgroundColor: {
-        "primary":{
-          "black": "#000000",
-          "green": "#1dba1c",
-          "white": "#ffffff",
-        }
+        primary: {
+          black: "#000000",
+          green: "#1dba1c",
+          white: "#ffffff",
+          darkblue: "0A0F22",
+          lightblue: "56B2BB",
+          grey: "BAC7CC",
+        },
+        secondary: {
+          darkblue: "1d2233",
+          grey: "f0f4f8",
+        },
       },
     },
   },
