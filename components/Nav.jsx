@@ -8,7 +8,7 @@ const Nav = () => {
 
 
   return (
-    <nav className='flex justify-between w-screen mb-16 pt-3 px-12'>
+    <nav className=''>
      
     </nav>
   );

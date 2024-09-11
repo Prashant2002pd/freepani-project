@@ -12,9 +12,18 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        "primary-black": "#000000",
-        "primary-green": "#1dba1c",
-        "primary-white": "#ffffff",
+        "primary":{
+          "black": "#000000",
+          "green": "#1dba1c",
+          "white": "#ffffff",
+        }
+      },
+      backgroundColor: {
+        "primary":{
+          "black": "#000000",
+          "green": "#1dba1c",
+          "white": "#ffffff",
+        }
       },
     },
   },
