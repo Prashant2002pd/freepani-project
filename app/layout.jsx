@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import "@styles/globals.css";
 import Nav from "@components/Nav";
-import {ThemeProvider} from "@components/MaterialTailwind"
+import { ThemeProvider } from "@components/MaterialTailwind";
 import ToTop from "@components/ToTop";
+import Footer from "@components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,10 @@ export default function RootLayout({ children }) {
       <body>
         <main>
           <ThemeProvider>
-          <Nav />
-          {children}
-          <ToTop/>
+            <Nav />
+            {children}
+            <Footer />
+            <ToTop />
           </ThemeProvider>
         </main>
       </body>

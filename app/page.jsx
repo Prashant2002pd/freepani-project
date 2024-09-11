@@ -3,7 +3,10 @@ import React from "react";
 const Home = () => {
   return (
     <div className="bg-primary-darkblue pt-20">
-      <div className="grid justify-center text-center content-center items-center ">
+      <div
+        className="grid justify-center text-center content-center items-center"
+        data-taos-offset="300"
+      >
         <div>
           <h1 className=" text-primary-white m-5 p-4 text-5xl font-bold">
             Empower every individual with your brand!
