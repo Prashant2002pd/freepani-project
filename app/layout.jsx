@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "@styles/globals.css";
 import Nav from "@components/Nav";
+import {ThemeProvider} from "@components/MaterialTailwind"
+import ToTop from "@components/ToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-black">
         <main>
+          <ThemeProvider>
           <Nav />
           {children}
+          <ToTop/>
+          </ThemeProvider>
         </main>
       </body>
     </html>
