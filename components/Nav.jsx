@@ -18,7 +18,7 @@ const Nav = () => {
         </ul>
       {/* </div> */}
       
-      <button className="p-2 px-4 bg-primary-green text-primary-black rounded-full font-extrabold text-md">Get in Touch</button>
+      <button className="p-2 px-4 bg-primary-lightblue text-primary-black rounded-full font-extrabold text-md">Get in Touch</button>
     </nav>
   );
 };
