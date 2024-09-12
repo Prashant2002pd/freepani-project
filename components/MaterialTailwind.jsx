@@ -1,5 +1,20 @@
 "use client"
 
-import { ThemeProvider, Breadcrumbs } from "@material-tailwind/react";
+import { 
+    ThemeProvider, 
+    Breadcrumbs,
+    Card,
+    Input,
+    Checkbox,
+    Button,
+    Typography} from "@material-tailwind/react";
 
-export {ThemeProvider,Breadcrumbs}
+export {
+    ThemeProvider,
+    Breadcrumbs,
+    Card,
+    Input,
+    Checkbox,
+    Button,
+    Typography
+}
