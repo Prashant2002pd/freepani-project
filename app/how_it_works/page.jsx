@@ -1,9 +1,12 @@
-import React from 'react'
+import Template from "@app/Template";
+import React from "react";
 
 const HIW = () => {
   return (
-    <div>HIW</div>
-  )
-}
+    <Template>
+      <div>HIW</div>
+    </Template>
+  );
+};
 
-export default HIW
+export default HIW;

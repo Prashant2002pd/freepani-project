@@ -4,6 +4,7 @@ import Nav from "@components/Nav";
 import { ThemeProvider } from "@components/MaterialTailwind";
 import ToTop from "@components/ToTop";
 import Footer from "@components/Footer";
+import Template from "./Template";
 
 const inter = Inter({ subsets: ["latin"] });
 

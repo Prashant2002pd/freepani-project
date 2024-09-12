@@ -1,9 +1,12 @@
-import React from 'react'
+import Template from "@app/Template";
+import React from "react";
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
-  )
-}
+    <Template>
+      <div>Gallery</div>
+    </Template>
+  );
+};
 
-export default Gallery
+export default Gallery;
