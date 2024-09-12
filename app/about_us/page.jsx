@@ -30,12 +30,12 @@ const images = {
 const About = () => {
   return (
     <Template>
-      <div className="pt-24 bg-primary-black divide-y-2 divide-gray-800 text-primary-white w-screen h-full">
+      <div className="mb-96 pt-24 bg-primary-black divide-y-2 divide-gray-800 text-primary-white w-full h-full">
         <motion.div
           variants={variants}
           initial="hidden"
           whileInView="show"
-          className="grid grid-cols-2 w-full gap-4 place-items-center"
+          className="grid grid-cols-2 w-full gap-4 place-items-center items-start"
         >
           <div className=" w-9/12 pl-12 pb-24">
             <Breadcrumbs
@@ -66,6 +66,7 @@ const About = () => {
               possimus, asperiores odit.
             </p>
           </div>
+          <div className="bg-gray-800 rounded-bl-3xl rounded-tr-3xl w-9/12 aspect-square"></div>
         </motion.div>
         <motion.div
           variants={variants}
@@ -77,7 +78,7 @@ const About = () => {
             Why Choose Us?
           </h1>
           <div className="h-4/6 flex justify-center gap-12 items-center">
-            <div className="w-64 ">
+            <div className="w-64">
               <ul className=" text-sm text-right flex flex-col justify-between gap-12">
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -103,11 +104,12 @@ const About = () => {
             </div>
             <motion.img
               variants={images}
-              src="https://static.wixstatic.com/media/79ba6e_6b9da515c30b46df847137fc80b9fd2d~mv2.jpeg/v1/crop/x_290,y_0,w_719,h_719/fill/w_594,h_594,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202024-02-07%20at%204_38_12%20PM.jpeg"
-              className="w-4/12 aspect-square"
+              loading="lazy"
+              src="https://cdn.pixabay.com/photo/2017/06/24/13/25/isolated-2437752_1280.png"
+              className="w-32 self-center"
             />
             <div className="w-64">
-              <ul className=" text-sm flex flex-col justify-between gap-12 pl-12">
+              <ul className=" text-sm flex flex-col justify-between gap-12">
                 <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Totam, repudiandae possimus?{" "}

@@ -39,7 +39,7 @@ const Nav = () => {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="p-2 px-4 bg-primary-lightblue text-primary-black rounded-full font-extrabold text-md"
+          className={`p-2 px-4 bg-primary-lightblue text-primary-black rounded-full font-extrabold ${Path=="/contact_us"?"bg-primary-green":""} text-md`}
         >
           Get in Touch
         </motion.button>

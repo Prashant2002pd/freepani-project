@@ -27,7 +27,7 @@ const images = {
 const Home = () => {
   return (
     <Template>
-      <div className="bg-primary-darkblue pt-20">
+      <div className="mb-96 bg-primary-darkblue pt-20">
         <motion.div
           variants={variants}
           initial="hidden"
