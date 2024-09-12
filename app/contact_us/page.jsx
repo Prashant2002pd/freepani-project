@@ -1,3 +1,4 @@
+"use client";
 import { BsFillSendFill } from "react-icons/bs";
 import {
   Card,
@@ -8,12 +9,39 @@ import {
 } from "@components/MaterialTailwind.jsx";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Template from "@app/Template";
+import { motion } from "framer-motion";
+
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const images = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const Contact = () => {
   return (
     <Template>
       <div className="w-screen bg-primary-black grid gap-12 place-items-center pt-24 pb-12 h-full">
-        <div className="grid place-items-center py-12">
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          className="grid place-items-center py-12"
+        >
           <h1 className="font-bold text-6xl text-primary-white tracking-wider">
             Contact Us
           </h1>
@@ -23,8 +51,13 @@ const Contact = () => {
             distinctio ratione maiores mollitia saepe labore laboriosam
             excepturi corrupti repudiandae officia?
           </p>
-        </div>
-        <div className="shadow-xl w-full py-12 px-48 bg-gray-900 grid grid-cols-2 place-items-center gap-32">
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          className="shadow-xl w-full py-12 px-48 bg-gray-900 grid grid-cols-2 place-items-center gap-32"
+        >
           <div className="text-primary-white py-12 h-full w-full">
             <h1 className="font-semibold text-5xl">Get in Touch.</h1>
             <p className="text-primary-grey">
@@ -118,7 +151,7 @@ const Contact = () => {
               </form>
             </Card>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Template>
   );

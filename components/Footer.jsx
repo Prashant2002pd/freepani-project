@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex justify-center bg-black">
+    <div className="flex justify-center bg-black w-full">
       <div className="m-4 p-4">
         <h1 className=" text-primary-white font-semibold">LOGO</h1>
       </div>

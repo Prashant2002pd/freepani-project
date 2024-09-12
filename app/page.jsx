@@ -1,11 +1,37 @@
+"use client";
 import React from "react";
 import Template from "./Template";
+import { motion } from "framer-motion";
+
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const images = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const Home = () => {
   return (
     <Template>
       <div className="bg-primary-darkblue pt-20">
-        <div
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
           className="grid justify-center text-center content-center items-center"
           data-taos-offset="300"
         >
@@ -17,15 +43,21 @@ const Home = () => {
               Refreshing Advertising that Gives Back
             </h2>
           </div>
-          <img
+          <motion.img
+            variants={images}
             className=" m-3 p-2"
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1056,h=575,fit=crop/YBgo0xrk47S8oX2P/my-project-YX4ZvrvxPpswGWxY.png"
           />
           <h3 className=" text-primary-white m-5 p-4 text-3xl font-bold">
             # Because Water should be free!
           </h3>
-        </div>
-        <div className="flex justify-center text-start content-center items-center bg-primary-grey ">
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          className="flex justify-center text-start content-center items-center bg-primary-grey "
+        >
           <div className="bg-primary-grey">
             <h1 className=" text-primary-darkblue  text-5xl font-bold m-10 mb-0 px-5">
               REVOLUTIONIZE ADVERTISING
@@ -41,13 +73,20 @@ const Home = () => {
               performance
             </p>
           </div>
-          <img
+          <motion.img
+            variants={images}
             className=" w-[110vh]"
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=861,h=597,fit=crop/YBgo0xrk47S8oX2P/my-project-1-2-A1agEbao58iGnx4A.png"
           />
-        </div>
-        <div className="flex justify-center text-start content-center items-center bg-primary-darkblue ">
-          <img
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          className="flex justify-center text-start content-center items-center bg-primary-darkblue "
+        >
+          <motion.img
+            variants={images}
             className=" w-[110vh]"
             src="https://assets.zyrosite.com/YBgo0xrk47S8oX2P/my-project-2-YbNDQ2NbWBS5WJO6.png"
           />
@@ -64,7 +103,7 @@ const Home = () => {
               industry.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Template>
   );
