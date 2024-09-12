@@ -20,7 +20,7 @@ const Nav = () => {
       <ul className=" flex justify-center py-3">
         {links.map((l) => (
           <li className="pr-[2.5rem]" key={l.href}>
-            <motion.div whileHover={{ scale: 1.1 }}>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Link
                 href={l.href}
                 className={`${
@@ -36,9 +36,13 @@ const Nav = () => {
         ))}
       </ul>
       <Link href="/contact_us">
-        <button className="p-2 px-4 bg-primary-lightblue text-primary-black rounded-full font-extrabold text-md">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="p-2 px-4 bg-primary-lightblue text-primary-black rounded-full font-extrabold text-md"
+        >
           Get in Touch
-        </button>
+        </motion.button>
       </Link>
     </nav>
   );

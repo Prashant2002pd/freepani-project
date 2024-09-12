@@ -75,7 +75,7 @@ const Home = () => {
           </div>
           <motion.img
             variants={images}
-            className=" w-[110vh]"
+            className=" w-1/2"
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=861,h=597,fit=crop/YBgo0xrk47S8oX2P/my-project-1-2-A1agEbao58iGnx4A.png"
           />
         </motion.div>
@@ -87,7 +87,7 @@ const Home = () => {
         >
           <motion.img
             variants={images}
-            className=" w-[110vh]"
+            className=" w-1/2"
             src="https://assets.zyrosite.com/YBgo0xrk47S8oX2P/my-project-2-YbNDQ2NbWBS5WJO6.png"
           />
           <div className="bg-primary-darkblue">
