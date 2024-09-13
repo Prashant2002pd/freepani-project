@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { 
     ThemeProvider, 
@@ -8,7 +8,8 @@ import {
     Input,
     Checkbox,
     Button,
-    Typography} from "@material-tailwind/react";
+    Typography,
+    Carousel} from "@material-tailwind/react";
 
 export {
     ThemeProvider,
@@ -18,5 +19,6 @@ export {
     Input,
     Checkbox,
     Button,
+    Carousel,
     Typography
 }
