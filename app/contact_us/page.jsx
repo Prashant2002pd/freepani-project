@@ -158,7 +158,7 @@ const Contact = () => {
           </div>
         </motion.div>
         <div className="w-full grid place-items-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.029784972957!2d77.33795402550174!3d28.658826825650433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa9b30000001%3A0xf8c8e01b5759ffb0!2sInderprastha%20Engineering%20College!5e0!3m2!1sen!2sin!4v1726145133507!5m2!1sen!2sin" className="w-11/12 h-96 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.029784972957!2d77.33795402550174!3d28.658826825650433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa9b30000001%3A0xf8c8e01b5759ffb0!2sInderprastha%20Engineering%20College!5e0!3m2!1sen!2sin!4v1726145133507!5m2!1sen!2sin" className="w-11/12 h-96 rounded-xl" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </Template>
