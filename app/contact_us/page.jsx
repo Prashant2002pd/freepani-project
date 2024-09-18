@@ -39,22 +39,18 @@ const Contact = () => {
   return (
     <Template>
       <div className="mb-96 w-full bg-primary-black grid gap-12 place-items-center pt-24 pb-12 h-full">
-
         <motion.div
           variants={variants}
           initial="hidden"
           whileInView="show"
           className="grid place-items-center py-12"
         >
-          
           <h1 className="font-bold text-6xl text-primary-white tracking-wider">
             Contact Us
           </h1>
           <p className="text-gray-700 w-4/6 text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio iure
-            aut, repellendus numquam voluptate ullam accusamus quam rerum ex
-            distinctio ratione maiores mollitia saepe labore laboriosam
-            excepturi corrupti repudiandae officia?
+            For Inquiries or Donations: Call us or visit our website to get
+            involved in our life-changing mission.
           </p>
         </motion.div>
         <motion.div
@@ -66,10 +62,10 @@ const Contact = () => {
           <div className="text-primary-white py-12 h-full w-full">
             <h1 className="font-semibold text-5xl">Get in Touch.</h1>
             <p className="text-primary-grey">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              ducimus veritatis magnam. Neque assumenda id, laboriosam harum,
-              delectus asperiores quisquam fuga architecto, recusandae voluptas
-              voluptate! Atque voluptates eaque libero voluptatem.
+              We’d love to hear from you! Whether you have a question, want to
+              get involved, or are ready to make a difference, we’re here to
+              help. Reach out to us today and join our mission to provide clean,
+              safe water to communities in need.
             </p>
             <div className="flex gap-6 py-6">
               <div className="w-16 aspect-square bg-primary-lightblue rounded-full"></div>
@@ -150,15 +146,24 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button className="mt-6 flex items-center gap-4 justify-center" fullWidth>
-                  Send Message <BsFillSendFill className="text-xl "/>
+                <Button
+                  className="mt-6 flex items-center gap-4 justify-center"
+                  fullWidth
+                >
+                  Send Message <BsFillSendFill className="text-xl " />
                 </Button>
               </form>
             </Card>
           </div>
         </motion.div>
         <div className="w-full grid place-items-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.029784972957!2d77.33795402550174!3d28.658826825650433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa9b30000001%3A0xf8c8e01b5759ffb0!2sInderprastha%20Engineering%20College!5e0!3m2!1sen!2sin!4v1726145133507!5m2!1sen!2sin" className="w-11/12 h-96 rounded-xl" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.029784972957!2d77.33795402550174!3d28.658826825650433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa9b30000001%3A0xf8c8e01b5759ffb0!2sInderprastha%20Engineering%20College!5e0!3m2!1sen!2sin!4v1726145133507!5m2!1sen!2sin"
+            className="w-11/12 h-96 rounded-xl"
+            allowFullScreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </Template>

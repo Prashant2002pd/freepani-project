@@ -56,14 +56,17 @@ const About = () => {
               </Link>
             </Breadcrumbs>
             <h1 className="font-bold text-7xl pr-12">
-              <span className="text-primary-lightblue">Lorem ipsum dolor</span>{" "}
-              sit amet consectetur adipisicing elit.{" "}
+              <span className="text-primary-lightblue">Who We Are</span>{" "}
             </h1>
             <p className="py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              unde ea. Possimus corrupti quod aspernatur. Dignissimos debitis
-              molestiae voluptas est fugiat. Neque odio aut vitae repellat illum
-              possimus, asperiores odit.
+              At V COLABORATE, we are committed to providing clean, free water
+              to communities in need. Our innovative vending machines, placed in
+              high-traffic areas, offer a practical solution to water scarcity,
+              ensuring that safe drinking water is easily accessible to
+              everyone. We believe that access to clean water is a basic human
+              right, and through our efforts, we aim to improve health,
+              education, and economic growth in communities worldwide. Together,
+              we can create a future where clean water is available to all.
             </p>
           </div>
           <div className="bg-gray-800 rounded-bl-3xl rounded-tr-3xl w-9/12 aspect-square"></div>
@@ -81,24 +84,24 @@ const About = () => {
             <div className="w-64">
               <ul className=" text-sm text-right flex flex-col justify-between gap-12">
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Innovative Solutions: We use cutting-edge vending machines to
+                  provide free, clean water in high-traffic areas, ensuring
+                  accessibility for all.{" "}
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Global Impact: Our initiative has already quenched the thirst
+                  of millions, and we’re continuously expanding to reach more
+                  communities in need.{" "}
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Sustainability: We are committed to long-term solutions for
+                  water scarcity, with each donation contributing to sustainable
+                  and lasting change.{" "}
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Transparent Donations: 100% of your contribution goes directly
+                  to placing free water vending machines, making a measurable
+                  difference.{" "}
                 </li>
               </ul>
             </div>
@@ -111,24 +114,24 @@ const About = () => {
             <div className="w-64">
               <ul className=" text-sm flex flex-col justify-between gap-12">
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Brand Visibility: Our partners gain visibility by supporting a
+                  vital cause, with opportunities to promote their brand through
+                  water machine wraps in busy locations.{" "}
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Community Focused: We place our water machines where they are
+                  needed most, ensuring that vulnerable and underserved
+                  communities have access to clean water.{" "}
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Health and Well-being: Access to clean water improves
+                  community health, reduces disease, and supports better
+                  education and local economies.{" "}
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Totam, repudiandae possimus?{" "}
+                  Join a Movement: By supporting us, you become part of a global
+                  effort to end the water crisis and improve lives around the
+                  world.{" "}
                 </li>
               </ul>
             </div>
@@ -152,12 +155,13 @@ const About = () => {
             </h1>
             <p className="text-xl font-medium">
               <b className="font-bold text-primary-lightblue">
-                Empower brands. Drive change.
+                At V COLABORATE,
               </b>{" "}
-              Our unique advertising medium connects businesses with consumers
-              while while contributing to positive social change. Through
-              creativity and technology, we deliver impactful, data-driven
-              experiences benefiting brands and society.
+              we are committed to providing clean, free water through our
+              vending machines in high-traffic areas. By making clean water
+              available at no cost, we address a fundamental human need and
+              empower communities to thrive. With every machine placed, we bring
+              closer the reality of universal access to safe water.
             </p>
             <button className="border-2 text-primary-lightblue px-5 mt-4 py-2 rounded-full border-primary-lightblue">
               Read More
@@ -178,10 +182,10 @@ const About = () => {
               <b className="font-bold text-primary-lightblue">
                 Redefine Advertising
               </b>{" "}
-              by seamlessly integrating it into people's lives. We aim to be the
-              global leader in innovative, eco-friendly advertising solutions,
-              offering brands an unparalleled platform to engage with their
-              target audience effectively
+              We envision a world where clean and safe water is accessible to
+              everyone, everywhere. Our innovative approach ensures that
+              communities have easy access to this life-sustaining resource,
+              driving health, education, and local growth.
             </p>
             <button className="border-2 text-primary-lightblue px-5 mt-4 py-2 rounded-full border-primary-lightblue">
               Read More
