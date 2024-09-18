@@ -8,11 +8,14 @@ import {
   Button,
   Typography,
   Breadcrumbs,
+  Alert,
 } from "@components/MaterialTailwind.jsx";
 import { FaFacebook, FaHome, FaInstagram, FaTwitter } from "react-icons/fa";
 import Template from "@app/Template";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState } from "react";
+import axios from "axios";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -36,9 +39,32 @@ const images = {
 };
 
 const Contact = () => {
+  const [formData,setFormData]=useState({
+    fullname:"",
+    email:"",
+    message:""
+  })
+  const [alert,setAlert]=useState("")
+  function handleInputChange(e){
+    setFormData({
+      ...formData,
+      [e.target.name]:e.target.value
+    })
+  }
+  function handleSendMail(e){
+    e.preventDefault();
+    axios.post("/api/mailing",formData)
+    .then(res=>{
+      setAlert(res.data.message)
+    })
+    .catch(err=>{
+      setAlert(err.data.error)
+    })
+  }
   return (
     <Template>
       <div className="mb-96 w-full bg-primary-black grid gap-12 place-items-center pt-24 pb-12 h-full">
+        {/* {alert!=""&&<Alert className="absolute w-96 py-6" color="blue">{alert}</Alert>} */}
         <motion.div
           variants={variants}
           initial="hidden"
@@ -108,13 +134,15 @@ const Contact = () => {
               Send a Message.
             </h1>
             <Card color="transparent" className="w-full" shadow={false}>
-              <form className="m-2 w-full max-w-screen-lg sm:w-96">
+              <form onSubmit={handleSendMail} className="m-2 w-full max-w-screen-lg sm:w-96">
                 <div className="mb-1 flex flex-col gap-3">
                   <Typography variant="h6" color="blue-gray" className="-mb-3">
                     Your Name
                   </Typography>
                   <Input
                     size="lg"
+                    name="fullname"
+                    onChange={handleInputChange}
                     placeholder="Name"
                     className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                     labelProps={{
@@ -125,7 +153,9 @@ const Contact = () => {
                     Your Email
                   </Typography>
                   <Input
+                    name="email"
                     size="lg"
+                    onChange={handleInputChange}
                     placeholder="name@mail.com"
                     className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                     labelProps={{
@@ -137,7 +167,9 @@ const Contact = () => {
                   </Typography>
                   <Textarea
                     type="text"
+                    name="message"
                     size="lg"
+                    onChange={handleInputChange}
                     placeholder="Message"
                     className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
                     labelProps={{
@@ -147,6 +179,7 @@ const Contact = () => {
                 </div>
 
                 <Button
+                type="submit"
                   className="mt-6 flex items-center gap-4 justify-center"
                   fullWidth
                 >

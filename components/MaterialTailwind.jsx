@@ -8,6 +8,7 @@ import {
     Input,
     Checkbox,
     Button,
+    Alert,
     Typography,
     Carousel} from "@material-tailwind/react";
 
@@ -15,6 +16,7 @@ export {
     ThemeProvider,
     Breadcrumbs,
     Card,
+    Alert,
     Textarea,
     Input,
     Checkbox,
