@@ -130,3 +130,12 @@ export const Caraousel=()=>{
         </div>
     )
 }
+
+export const ProductCard=()=>{
+  return(
+    <div className="rounded-2xl aspect-square bg-cyan-100 p-5 w-1/5">
+      <h1 className="text-3xl aspect-square">Prorietary blend of electrolyes and more to rehydrate and replnish.</h1>
+      <button className="px-4 py-2 border-2 border-primary-lightblue hover:text-primary-lightblue hover:bg-white rounded-full">Shop Bottles</button>
+    </div>
+  )
+}

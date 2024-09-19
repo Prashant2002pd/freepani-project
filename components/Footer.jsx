@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="fixed text-primary-white bottom-0 z-[-1] grid justify-center bg-primary-darkblue w-full h-96">
+    <div className="fixed text-primary-white bottom-0 z-[-1] grid justify-center bg-secondary-darkblue w-full h-96">
       <div className="grid grid-cols-3 justify-center w-full py-10 divide-x-2 px-32 divide-primary-lightblue">
         <div className="w-full flex flex-col justify-center px-10 items-center">
           <h1 className="text-primary-white text-lg">STAY IN TOUCH!</h1>

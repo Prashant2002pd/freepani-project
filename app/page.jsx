@@ -2,7 +2,8 @@
 import React from "react";
 import Template from "./Template";
 import { motion } from "framer-motion";
-import { Caraousel } from "@components/Cards";
+import { Caraousel, ProductCard } from "@components/Cards";
+import { FaStar } from "react-icons/fa";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -28,123 +29,112 @@ const images = {
 const Home = () => {
   return (
     <Template>
-      <div className="mb-96 bg-primary-darkblue pt-20 flex flex-col">
-        <Caraousel />
-        <div className="grid grid-cols-2 bg-cyan-800">
-          <div className="grid grid-flow-row-dense h-fit py-40  gap-10 px-20">
-            <div>
-              <h1 className=" text-white  text-5xl font-bold">
-                Water Changes Everything
-              </h1>
-              <h2 className=" text-primary-lightblue text-3xl font-bold">
-                Clean water is the foundation of health, education, and growth.
-              </h2>
+      <div className="mb-96 bg-primary-darkblue h-full pt-20 flex flex-col">
+        {/* HERO */}
+        <div className="text-white bg-secondary-darkblue w-full py-36 grid place-items-center">
+          <div className="w-1/2 text-center">
+            <h1 className="text-primary-lightblue text-6xl">Say Hello to your new favourite drinking buddy.</h1>
+            <h1 className="text-2xl">...and goodbye to rough nights</h1>
+            <div className="flex justify-center gap-4 py-6 text-gray-400">
+              <button className="px-4 py-2 border-2 border-primary-lightblue hover:text-primary-lightblue hover:bg-white rounded-full">Shop Bottles</button>
+              <button className="px-4 py-2 border-2 border-primary-lightblue hover:text-primary-lightblue hover:bg-white rounded-full">Frame your Bottle</button>
             </div>
-            <p className=" text-secondary-darkblue text-lg font-semibold">
-              Join us now and become part of a global movement dedicated to
-              providing clean water to every community in need.
-            </p>
-          </div>
-          {/* Image Container */}
-          <div className="w-full h-full relative overflow-hidden">
-            <motion.img
-              variants={images}
-              className="absolute top-0 left-0 w-full h-full object-cover object-center"
-              loading="lazy"
-              src="https://root7.in/cdn/shop/files/IMG_5423_1_670x.jpg"
-            />
           </div>
         </div>
-        <div className="grid grid-cols-2 bg-indigo-700">
-          {/* Image Container */}
-          <div className="w-full h-full relative overflow-hidden">
-            <motion.img
-              variants={images}
-              className="absolute top-0 left-0 w-full h-full object-cover object-center"
-              loading="lazy"
-              src="https://root7.in/cdn/shop/files/every-root7_670x.png?v=1661928982"
-            />
-          </div>
-          <div className="grid grid-flow-row-dense text-right h-fit py-28 place-items-center pl-20">
-            <h1 className=" text-secondary-grey text-5xl font-bold m-10 mb-0 px-5">
-              Water for All: Digital Action, Real Impact
-            </h1>
-
-            <h2 className=" text-primary-black text-3xl font-bold m-10 mb-0 px-5 mt-0">
-              Making clean water accessible through innovative vending machines.
-            </h2>
-
-            <p className="text-primary-white text-lg m-10 p-5 font-semibold">
-              Support our mission today and help us expand our reach, making
-              clean water available in more high-traffic areas.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-2 bg-cyan-800">
-          <div className="grid grid-flow-row-dense h-fit py-40  gap-10 px-20">
-            <div>
-              <h1 className=" text-white  text-5xl font-bold">
-                Join the Movement
-              </h1>
-              <h2 className=" text-primary-lightblue text-3xl font-bold">
-                Together, we can ensure that clean water is available
-                everywhere.
-              </h2>
+        {/* HERO COMMENT */}
+        <div className="flex px-36 gap-32 py-12 justify-center text-primary-lightblue">
+          <h1 className="font-semibold text-3xl w-4/6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit minima facilis dolor quas minus debitis voluptatum optio dolores quibusdam quidem, ipsam nam voluptas deleniti ipsa excepturi architecto laudantium repudiandae quo?"</h1>
+          <div className="p-5 w-1/4 grid place-items-start rounded-2xl bg-white">
+            <p className="text-3xl font-semibold">Over 1,600 Five Stars Reviews</p>
+            <div className="flex gap-2">
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
             </div>
-            <p className=" text-secondary-darkblue text-lg font-semibold">
-              Donate now! Your contribution directly impacts the placement of
-              free water vending machines where they’re needed most.
-            </p>
-          </div>
-          {/* Image Container */}
-          <div className="w-full h-full relative overflow-hidden">
-            <motion.img
-              variants={images}
-              className="absolute top-0 left-0 w-full h-full object-cover object-center"
-              loading="lazy"
-              src="https://root7.in/cdn/shop/files/travel-cups-new_670x.png?v=1661930959"
-            />
+            <a href="#" className="underline text-sm">Read the reviews</a>
           </div>
         </div>
-        <div className="grid grid-cols-2 bg-indigo-700">
-          {/* Image Container */}
-          <div className="w-full h-full relative overflow-hidden">
-            <motion.img
-              variants={images}
-              className="absolute top-0 left-0 w-full h-full object-cover object-right"
-              loading="lazy"
-              src="https://root7.in/cdn/shop/files/banner3b_1520x.progressive.png.jpg?v=1697529488"
-            />
+        {/* Marque */}
+        <div class="overflow-x-hidden text-xl bg-primary-lightblue text-primary-darkblue">
+          <div class="py-4 animate-marquee whitespace-nowrap">
+            <span class="mx-4 ">Marquee Item 1</span>
+            <span class="mx-4 ">Marquee Item 2</span>
+            <span class="mx-4 ">Marquee Item 3</span>
+            <span class="mx-4 ">Marquee Item 4</span>
+            <span class="mx-4 ">Marquee Item 5</span>
           </div>
-          <div className="grid grid-flow-row-dense text-right h-fit py-28 place-items-center pl-20">
-            <h1 className=" text-secondary-grey text-5xl font-bold m-10 mb-0 px-5">
-              Creative Advertising Solutions
-            </h1>
 
-            <p className="text-primary-black text-lg m-10 p-5 font-semibold">
-              Our creative advertising solutions are designed to put a smile on
-              your audience's face and create a positive impression of your
-              brand. With our unique approach, we guarantee meaningful
-              impressions and the greatest brand loyalty platform in the ad
-              industry.
-            </p>
+          <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+            <span class="mx-4 ">Marquee Item 1</span>
+            <span class="mx-4 ">Marquee Item 2</span>
+            <span class="mx-4 ">Marquee Item 3</span>
+            <span class="mx-4 ">Marquee Item 4</span>
+            <span class="mx-4 ">Marquee Item 5</span>
           </div>
         </div>
-        <div className="bg-primary-lightblue p-12 py-16 text-secondary-darkblue grid grid-cols-2 place-items-center w-full">
-          <div className="w-8/12">
-            <h1 className="text-6xl text-cyan-900 font-semibold">
-              Your Support Matters
+        {/* Products */}
+        <div className="grid place-items-center py-16">
+          <h1 className="text-5xl text-primary-lightblue py-4">Our science-backed products</h1>
+          <div className="flex gap-4 justify-center w-full overflow-x-hidden ">
+          <ProductCard/>
+          <ProductCard/>
+          <ProductCard/>
+          </div>
+        </div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          className="flex justify-center text-white items-center gap-24 py-12 px-32 "
+        >
+          <div className="aspect-square bg-gray-800 rounded-2xl w-4/12" />
+          <div className="w-5/12">
+            <h1 className=" text-5xl text-primary-white py-4 pr-12">
+              Our Mission
             </h1>
-            <p className="text-2xl">
-              100% of your donation will go toward providing free water to those
-              in need.
+            <p className="text-xl font-medium">
+              <b className="font-bold text-primary-lightblue">
+                At V COLABORATE,
+              </b>{" "}
+              we are committed to providing clean, free water through our
+              vending machines in high-traffic areas. By making clean water
+              available at no cost, we address a fundamental human need and
+              empower communities to thrive. With every machine placed, we bring
+              closer the reality of universal access to safe water.
             </p>
+            <button className="border-2 text-primary-lightblue px-5 mt-4 py-2 rounded-full border-primary-lightblue">
+              Read More
+            </button>
           </div>
-          <p className="text-3xl text-cyan-900 px-24">
-            Make a difference today! Help bring clean, free water to those who
-            need it by contributing to our life-saving mission.
-          </p>
-        </div>
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          className="flex text-white justify-center items-center gap-24 py-12 px-32 "
+        >
+          <div className="w-5/12 grid place-items-end">
+            <h1 className=" text-5xl text-primary-white text-right py-4">
+              Our Vision
+            </h1>
+            <p className="text-xl font-medium text-right">
+              <b className="font-bold text-primary-lightblue">
+                Redefine Advertising
+              </b>{" "}
+              We envision a world where clean and safe water is accessible to
+              everyone, everywhere. Our innovative approach ensures that
+              communities have easy access to this life-sustaining resource,
+              driving health, education, and local growth.
+            </p>
+            <button className="border-2 text-primary-lightblue px-5 mt-4 py-2 rounded-full border-primary-lightblue">
+              Read More
+            </button>
+          </div>
+          <div className="aspect-square bg-gray-800 rounded-2xl w-4/12" />
+        </motion.div>
+
       </div>
     </Template>
   );
