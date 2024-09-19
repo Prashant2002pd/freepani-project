@@ -55,18 +55,24 @@ const About = () => {
                 About
               </Link>
             </Breadcrumbs>
-            <h1 className="font-bold text-7xl pr-12">
-              <span className="text-primary-lightblue">Who We Are</span>{" "}
+            <h1 className="font-bold text-6xl pr-12">
+              <span className="text-primary-lightblue">
+                Transforming Lives with Clean Water:
+              </span>{" "}
+              Tomorrow Our Mission for a Better
             </h1>
             <p className="py-4">
-              At V COLABORATE, we are committed to providing clean, free water
-              to communities in need. Our innovative vending machines, placed in
-              high-traffic areas, offer a practical solution to water scarcity,
-              ensuring that safe drinking water is easily accessible to
-              everyone. We believe that access to clean water is a basic human
-              right, and through our efforts, we aim to improve health,
-              education, and economic growth in communities worldwide. Together,
-              we can create a future where clean water is available to all.
+              <span className=" text-primary-lightblue font-semibold">
+                At V COLABORATE,
+              </span>{" "}
+              we are committed to providing clean, free water to communities in
+              need. Our innovative vending machines, placed in high-traffic
+              areas, offer a practical solution to water scarcity, ensuring that
+              safe drinking water is easily accessible to everyone. We believe
+              that access to clean water is a basic human right, and through our
+              efforts, we aim to improve health, education, and economic growth
+              in communities worldwide. Together, we can create a future where
+              clean water is available to all.
             </p>
           </div>
           <div className="bg-gray-800 rounded-bl-3xl rounded-tr-3xl w-9/12 aspect-square"></div>

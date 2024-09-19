@@ -39,27 +39,28 @@ const images = {
 };
 
 const Contact = () => {
-  const [formData,setFormData]=useState({
-    fullname:"",
-    email:"",
-    message:""
-  })
-  const [alert,setAlert]=useState("")
-  function handleInputChange(e){
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    message: "",
+  });
+  const [alert, setAlert] = useState("");
+  function handleInputChange(e) {
     setFormData({
       ...formData,
-      [e.target.name]:e.target.value
-    })
+      [e.target.name]: e.target.value,
+    });
   }
-  function handleSendMail(e){
+  function handleSendMail(e) {
     e.preventDefault();
-    axios.post("/api/mailing",formData)
-    .then(res=>{
-      setAlert(res.data.message)
-    })
-    .catch(err=>{
-      setAlert(err.data.error)
-    })
+    axios
+      .post("/api/mailing", formData)
+      .then((res) => {
+        setAlert(res.data.message);
+      })
+      .catch((err) => {
+        setAlert(err.data.error);
+      });
   }
   return (
     <Template>
@@ -134,7 +135,10 @@ const Contact = () => {
               Send a Message.
             </h1>
             <Card color="transparent" className="w-full" shadow={false}>
-              <form onSubmit={handleSendMail} className="m-2 w-full max-w-screen-lg sm:w-96">
+              <form
+                onSubmit={handleSendMail}
+                className="m-2 w-full max-w-screen-lg sm:w-96"
+              >
                 <div className="mb-1 flex flex-col gap-3">
                   <Typography variant="h6" color="blue-gray" className="-mb-3">
                     Your Name
@@ -179,12 +183,18 @@ const Contact = () => {
                 </div>
 
                 <Button
-                type="submit"
+                  type="submit"
                   className="mt-6 flex items-center gap-4 justify-center"
                   fullWidth
                 >
                   Send Message <BsFillSendFill className="text-xl " />
                 </Button>
+                {alert && (
+                  <Typography className=" font-bold text-center mt-2 text-black">
+                    {" "}
+                    Your message is send
+                  </Typography>
+                )}
               </form>
             </Card>
           </div>
