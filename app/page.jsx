@@ -33,19 +33,26 @@ const Home = () => {
         {/* HERO */}
         <div className="text-white bg-secondary-darkblue w-full py-36 grid place-items-center">
           <div className="w-1/2 text-center">
-            <h1 className="text-primary-lightblue text-6xl">Say Hello to your new favourite drinking buddy.</h1>
-            <h1 className="text-2xl">...and goodbye to rough nights</h1>
+            <h1 className="text-primary-lightblue text-6xl">
+              Clean Water, Brighter Futures
+            </h1>
+            <h1 className="text-2xl">
+              Empowering Communities One Drop at a Time
+            </h1>
             <div className="flex justify-center gap-4 py-6 text-gray-400">
-              <button className="px-4 py-2 border-2 border-primary-lightblue hover:text-primary-lightblue hover:bg-white rounded-full">Shop Bottles</button>
-              <button className="px-4 py-2 border-2 border-primary-lightblue hover:text-primary-lightblue hover:bg-white rounded-full">Frame your Bottle</button>
+              <button className="px-4 py-2 border-2 border-primary-lightblue hover:text-primary-lightblue hover:bg-white rounded-full">
+                Shop Bottles
+              </button>
+              <button className="px-4 py-2 border-2 border-primary-lightblue hover:text-primary-lightblue hover:bg-white rounded-full">
+                Frame your Bottle
+              </button>
             </div>
           </div>
         </div>
         {/* HERO COMMENT */}
         <div className="flex px-36 gap-32 py-12 justify-center text-primary-lightblue">
-          <h1 className="font-semibold text-3xl w-4/6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit minima facilis dolor quas minus debitis voluptatum optio dolores quibusdam quidem, ipsam nam voluptas deleniti ipsa excepturi architecto laudantium repudiandae quo?"</h1>
           <div className="p-5 w-1/4 grid place-items-start rounded-2xl bg-white">
-            <p className="text-3xl font-semibold">Over 1,600 Five Stars Reviews</p>
+            <p className="text-3xl font-semibold">Over 100 Contributors</p>
             <div className="flex gap-2">
               <FaStar className="text-2xl" />
               <FaStar className="text-2xl" />
@@ -53,7 +60,39 @@ const Home = () => {
               <FaStar className="text-2xl" />
               <FaStar className="text-2xl" />
             </div>
-            <a href="#" className="underline text-sm">Read the reviews</a>
+            <a href="#" className="underline text-sm">
+              Read the reviews
+            </a>
+          </div>
+          <div className="p-5 w-1/4 grid place-items-start rounded-2xl bg-white">
+            <p className="text-3xl font-semibold">
+              Over 120 working vending machines
+            </p>
+            <div className="flex gap-2">
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+            </div>
+            <a href="#" className="underline text-sm">
+              Read the reviews
+            </a>
+          </div>
+          <div className="p-5 w-1/4 grid place-items-start rounded-2xl bg-white">
+            <p className="text-3xl font-semibold">
+              Over 1,600 Five Stars Reviews
+            </p>
+            <div className="flex gap-2">
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+              <FaStar className="text-2xl" />
+            </div>
+            <a href="#" className="underline text-sm">
+              Read the reviews
+            </a>
           </div>
         </div>
         {/* Marque */}
@@ -76,11 +115,28 @@ const Home = () => {
         </div>
         {/* Products */}
         <div className="grid place-items-center py-16">
-          <h1 className="text-5xl text-primary-lightblue py-4">Our science-backed products</h1>
+          <h1 className="text-5xl text-primary-lightblue py-4">
+            From Need to Impact: How We Bring Clean Water to Communities
+          </h1>
           <div className="flex gap-4 justify-center w-full overflow-x-hidden ">
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
+            <ProductCard
+              title={"We assess areas with limited access to clean water"}
+              text={
+                "We start by identifying high-traffic areas where clean, safe water is scarce, such as metro stations, public squares, and busy markets. Our goal is to place free water vending machines where they can have the greatest impact."
+              }
+            />
+            <ProductCard
+              title={"We place free, easily accessible water vending machines"}
+              text={
+                "After identifying the locations, we install state-of-the-art water vending machines that provide clean, free water to anyone who needs it. These machines are maintained regularly to ensure continuous access."
+              }
+            />
+            <ProductCard
+              title={"Your support helps us reach more communities"}
+              text={
+                "Every donation contributes to installing more machines and expanding our reach. With your help, we can ensure more people in need gain access to clean water, creating healthier, more resilient communities."
+              }
+            />
           </div>
         </div>
         <motion.div
@@ -92,17 +148,14 @@ const Home = () => {
           <div className="aspect-square bg-gray-800 rounded-2xl w-4/12" />
           <div className="w-5/12">
             <h1 className=" text-5xl text-primary-white py-4 pr-12">
-              Our Mission
+              Water Changes Everything
             </h1>
             <p className="text-xl font-medium">
               <b className="font-bold text-primary-lightblue">
-                At V COLABORATE,
+                Clean water is the foundation of health, education, and growth.
               </b>{" "}
-              we are committed to providing clean, free water through our
-              vending machines in high-traffic areas. By making clean water
-              available at no cost, we address a fundamental human need and
-              empower communities to thrive. With every machine placed, we bring
-              closer the reality of universal access to safe water.
+              Learn more about our mission to bring safe water to every
+              community.
             </p>
             <button className="border-2 text-primary-lightblue px-5 mt-4 py-2 rounded-full border-primary-lightblue">
               Read More
@@ -117,16 +170,14 @@ const Home = () => {
         >
           <div className="w-5/12 grid place-items-end">
             <h1 className=" text-5xl text-primary-white text-right py-4">
-              Our Vision
+              Digital Action, Real Impact
             </h1>
             <p className="text-xl font-medium text-right">
               <b className="font-bold text-primary-lightblue">
-                Redefine Advertising
+                Making clean water accessible through innovative vending
+                machines.
               </b>{" "}
-              We envision a world where clean and safe water is accessible to
-              everyone, everywhere. Our innovative approach ensures that
-              communities have easy access to this life-sustaining resource,
-              driving health, education, and local growth.
+              Support our cause and gain brand visibility.
             </p>
             <button className="border-2 text-primary-lightblue px-5 mt-4 py-2 rounded-full border-primary-lightblue">
               Read More
@@ -134,7 +185,30 @@ const Home = () => {
           </div>
           <div className="aspect-square bg-gray-800 rounded-2xl w-4/12" />
         </motion.div>
-
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          className="flex justify-center text-white items-center gap-24 py-12 px-32 "
+        >
+          <div className="aspect-square bg-gray-800 rounded-2xl w-4/12" />
+          <div className="w-5/12">
+            <h1 className=" text-5xl text-primary-white py-4 pr-12">
+              Join the Movement
+            </h1>
+            <p className="text-xl font-medium">
+              <b className="font-bold text-primary-lightblue">
+                Together, we can ensure that clean water is available
+                everywhere.
+              </b>{" "}
+              Donate now to help place free water vending machines in
+              high-traffic areas.
+            </p>
+            <button className="border-2 text-primary-lightblue px-5 mt-4 py-2 rounded-full border-primary-lightblue">
+              Read More
+            </button>
+          </div>
+        </motion.div>
       </div>
     </Template>
   );
